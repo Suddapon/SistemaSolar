@@ -1,11 +1,9 @@
 package mygame;
 
 import com.jme3.app.SimpleApplication;
-import com.jme3.effect.ParticleEmitter;
-import com.jme3.effect.ParticleMesh;
+
 import com.jme3.material.Material;
 import com.jme3.math.ColorRGBA;
-import com.jme3.math.Vector3f;
 import com.jme3.renderer.RenderManager;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Node;
@@ -35,7 +33,7 @@ public class Main extends SimpleApplication {
 
     @Override
     public void simpleInitApp() {
-        /*Sphere sol = new Sphere(32, 32, 1);
+        Sphere sol = new Sphere(32, 32, 1);
         Sphere mercurio = new Sphere(32, 32, 1);
         Sphere venus = new Sphere(32, 32, 1);
         Sphere tierra = new Sphere(32, 32, 1);
@@ -43,9 +41,9 @@ public class Main extends SimpleApplication {
         Sphere jupiter = new Sphere(32, 32, 1);
         Sphere saturno = new Sphere(32, 32, 1);
         Sphere urano = new Sphere(32, 32, 1);
-        Sphere neptuno = new Sphere(32, 32, 1);*/
+        Sphere neptuno = new Sphere(32, 32, 1);
 
-        Box sol = new Box(1, 1, 1);
+        /*Box sol = new Box(1, 1, 1);
         Box mercurio = new Box(1, 1, 1);
         Box venus = new Box(1, 1, 1);
         Box tierra = new Box(1, 1, 1);
@@ -53,7 +51,7 @@ public class Main extends SimpleApplication {
         Box jupiter = new Box(1, 1, 1);
         Box saturno = new Box(1, 1, 1);
         Box urano = new Box(1, 1, 1);
-        Box neptuno = new Box(1, 1, 1);
+        Box neptuno = new Box(1, 1, 1);*/
         Geometry geom = new Geometry("sol", sol);
         Geometry geom1= new Geometry("mercurio",mercurio);
         Geometry geom2= new Geometry("venus",venus);
@@ -127,11 +125,11 @@ public class Main extends SimpleApplication {
         geom5.scale(.75f);
         geom5.move(5,0,5);
         geom6.scale(.60f);
-        geom6.move(6,0,6);
+        geom6.move(6,0,7);
         geom7.scale(.50f);
-        geom7.move(7,0,7);
+        geom7.move(7,0,9);
         geom8.scale(.50f);
-        geom8.move(8,0,8);
+        geom8.move(8,0,10);
 
         
         viaLactea.attachChild(geom);
